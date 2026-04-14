@@ -1,0 +1,5 @@
+scenario,scenario_label,supply_chain_savings_tco2e,substitution_gain_tco2e,forest_carbon_retention_tco2e,net_climate_benefit_tco2e,carbon_value_eur
+baseline,Baseline,0.0,0.0,0.0,0.0,0.0
+bioenergy_push,Bioenergy Push,-7167716.73,28670866.919999998,-43270586.08458802,-21767435.89458802,-2176743589.4588017
+conservation_priority,Conservation Priority,7037442.051,-33230480.684999987,43270586.08458801,17077547.45058803,1707754745.0588028
+material_cascade,Material Cascade,511348.95199999894,17897213.31999999,0.0,18408562.27199999,1840856227.1999989

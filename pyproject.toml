@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eu-forest-biomass-tradeoff-explorer"
+version = "0.1.0"
+description = "A reproducible EU country-level scenario analysis of forest biomass allocation, carbon trade-offs, and policy-relevant land-use metrics."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "geopandas>=1.1.0",
+  "matplotlib>=3.10.0",
+  "nbformat>=5.10.0",
+  "numpy>=2.4.0",
+  "pandas>=3.0.0",
+  "pytest>=9.0.0",
+  "scipy>=1.15.0",
+]
+
+[project.scripts]
+run-eu-forest-biomass-tradeoffs = "eu_forest_biomass_tradeoff_explorer.pipeline:main"
+build-chalmers-application-brief = "eu_forest_biomass_tradeoff_explorer.application_brief:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

@@ -1,0 +1,4 @@
+selected_policy,selected_policy_label,region_count,total_area_km2,woodland_area_km2,agricultural_land_area_km2,selected_policy_benefit_tco2e,selected_policy_value_eur,selected_policy_regional_harvest_after_policy_m3,regional_baseline_harvest_m3,selected_policy_food_capacity_indexed_ha,mean_policy_value_eur_per_region,harvest_retention_share
+conservation_priority,Conservation Priority,79,3954502.0,2402462.0,764781.0,12514116.682123713,1251411668.2123713,208719467.80452305,245552315.06414476,0.0,15840654.0280047,0.85
+material_cascade,Material Cascade,92,3527720.0,2000649.0,644831.0,9121081.863430494,912108186.3430494,192487979.1766674,192487979.1766674,0.0,9914219.416772276,1.0
+food_land_safeguard,Food-Land Safeguard,40,3085712.0,1472114.0,836972.0,1834894.1007094556,183489410.07094556,11248261.37284862,11248261.37284862,1694412.4543953952,4587235.251773639,1.0

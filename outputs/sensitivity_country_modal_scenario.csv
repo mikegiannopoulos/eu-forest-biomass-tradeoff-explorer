@@ -1,0 +1,27 @@
+country,country_code,iso3_code,scenario,scenario_label,draws_best,share_best,runner_up_scenario_label,runner_up_share_best,robustness_margin
+Austria,AT,AUT,conservation_priority,Conservation Priority,318,0.795,Material Cascade,0.205,0.5900000000000001
+Belgium,BE,BEL,conservation_priority,Conservation Priority,399,0.9975,Material Cascade,0.0025,0.9950000000000001
+Bulgaria,BG,BGR,material_cascade,Material Cascade,332,0.83,Conservation Priority,0.17,0.6599999999999999
+Croatia,HR,HRV,material_cascade,Material Cascade,315,0.7875,Conservation Priority,0.2125,0.575
+Cyprus,CY,CYP,material_cascade,Material Cascade,398,0.995,Conservation Priority,0.005,0.99
+Czechia,CZ,CZE,conservation_priority,Conservation Priority,395,0.9875,Material Cascade,0.0125,0.9750000000000001
+Denmark,DK,DNK,material_cascade,Material Cascade,283,0.7075,Conservation Priority,0.2925,0.41500000000000004
+Estonia,EE,EST,material_cascade,Material Cascade,269,0.6725,Conservation Priority,0.3275,0.345
+Finland,FI,FIN,conservation_priority,Conservation Priority,250,0.625,Material Cascade,0.3725,0.2525
+France,FR,FRA,material_cascade,Material Cascade,342,0.855,Conservation Priority,0.145,0.71
+Germany,DE,DEU,conservation_priority,Conservation Priority,301,0.7525,Material Cascade,0.2475,0.5049999999999999
+Greece,EL,GRC,material_cascade,Material Cascade,394,0.985,Conservation Priority,0.0125,0.9725
+Hungary,HU,HUN,material_cascade,Material Cascade,332,0.83,Conservation Priority,0.17,0.6599999999999999
+Ireland,IE,IRL,material_cascade,Material Cascade,324,0.81,Conservation Priority,0.19,0.6200000000000001
+Italy,IT,ITA,material_cascade,Material Cascade,388,0.97,Conservation Priority,0.03,0.94
+Latvia,LV,LVA,conservation_priority,Conservation Priority,276,0.69,Material Cascade,0.31,0.37999999999999995
+Lithuania,LT,LTU,conservation_priority,Conservation Priority,236,0.59,Material Cascade,0.41,0.18
+Luxembourg,LU,LUX,conservation_priority,Conservation Priority,336,0.84,Material Cascade,0.16,0.6799999999999999
+Netherlands,NL,NLD,material_cascade,Material Cascade,318,0.795,Conservation Priority,0.205,0.5900000000000001
+Poland,PL,POL,conservation_priority,Conservation Priority,356,0.89,Material Cascade,0.11,0.78
+Portugal,PT,PRT,conservation_priority,Conservation Priority,245,0.6125,Material Cascade,0.3875,0.22500000000000003
+Romania,RO,ROU,material_cascade,Material Cascade,235,0.5875,Conservation Priority,0.4125,0.17500000000000004
+Slovakia,SK,SVK,material_cascade,Material Cascade,331,0.8275,Conservation Priority,0.1725,0.655
+Slovenia,SI,SVN,conservation_priority,Conservation Priority,272,0.68,Material Cascade,0.32,0.36000000000000004
+Spain,ES,ESP,material_cascade,Material Cascade,228,0.57,Conservation Priority,0.4125,0.15749999999999997
+Sweden,SE,SWE,material_cascade,Material Cascade,342,0.855,Conservation Priority,0.125,0.73

@@ -1,0 +1,4 @@
+scenario,scenario_label,mean_net_climate_benefit_tco2e,median_net_climate_benefit_tco2e,p10_net_climate_benefit_tco2e,p90_net_climate_benefit_tco2e,min_net_climate_benefit_tco2e,max_net_climate_benefit_tco2e,share_positive,draws_best,share_best
+bioenergy_push,Bioenergy Push,-28725283.091162406,-27098515.38751311,-50078217.0593191,-9692142.905177891,-72520634.83981992,-1390369.263911757,0.0,,
+conservation_priority,Conservation Priority,18548903.001478396,17866342.326207336,4844590.051582164,34284472.73569577,-7457438.957107881,46948070.095993824,0.9775,176.0,0.44
+material_cascade,Material Cascade,19152933.004025117,18527538.246768847,10650905.179632356,28558433.41459541,5023161.743945687,41180944.703876264,1.0,224.0,0.56

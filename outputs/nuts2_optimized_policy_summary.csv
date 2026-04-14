@@ -1,0 +1,4 @@
+optimized_policy,optimized_policy_label,region_count,optimized_policy_value_eur,optimized_policy_benefit_tco2e,optimized_regional_harvest_after_policy_m3,optimized_food_capacity_indexed_ha,switch_from_unconstrained_count,mean_value_eur_per_region
+material_cascade,Material Cascade,123,1423555640.8262782,14235556.408262784,340474399.63905066,0.0,31,11573623.096148603
+conservation_priority,Conservation Priority,34,497964945.08236307,4979649.45082363,76375283.5771736,0.0,0,14646027.79654009
+food_land_safeguard,Food-Land Safeguard,54,230539036.40213886,2305390.3640213883,18960881.177935287,2362455.264180404,14,4269241.414854423

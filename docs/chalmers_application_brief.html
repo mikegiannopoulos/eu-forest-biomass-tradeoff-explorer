@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chalmers Application Brief</title>
+  <style>
+    :root {
+      --ink: #1d2430;
+      --muted: #5c6675;
+      --accent: #214f7a;
+      --line: #d8dee8;
+      --paper: #ffffff;
+      --panel: #f6f8fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eef2f7;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.45;
+    }
+
+    .page {
+      width: 8.27in;
+      min-height: 11.69in;
+      margin: 24px auto;
+      padding: 0.85in 0.85in 0.95in;
+      background: var(--paper);
+      box-shadow: 0 10px 28px rgba(25, 40, 62, 0.12);
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 0.28rem;
+      line-height: 1.18;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-top: 1.05rem;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0.38rem 0;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 0.4rem 0 0.55rem 1.1rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.2rem 0;
+    }
+
+    .meta {
+      margin-top: 0.35rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .lede {
+      margin-top: 0.8rem;
+      padding: 0.65rem 0.75rem;
+      background: var(--panel);
+      border-left: 4px solid var(--accent);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.55rem 1rem;
+      margin-top: 0.45rem;
+    }
+
+    .card {
+      padding: 0.55rem 0.65rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    .card strong {
+      color: var(--accent);
+    }
+
+    .figure {
+      margin: 0.9rem 0 1rem;
+      padding: 0.55rem;
+      border: 1px solid var(--line);
+      background: #fbfcfe;
+    }
+
+    .figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      margin-top: 0.45rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .small {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .break {
+      page-break-before: always;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: auto;
+        min-height: auto;
+        page-break-after: always;
+      }
+
+      .page:last-child {
+        page-break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <h1>European Forest Carbon, Wood-Use, and Food-Land Trade-offs Under Constrained Regional Policy Design</h1>
+    <div class="meta">Application brief for the Chalmers doctoral position “Land Use and Climate Impacts”</div>
+
+    <p class="lede">
+      This project was built as a transparent, portfolio-scale research exercise directly aligned with the
+      Chalmers position. It combines official European data, carbon-accounting logic, subnational spatial analysis,
+      and a small constrained allocation model to study trade-offs between forest carbon, wood use, food-related land
+      capacity, and policy design.
+    </p>
+
+    <h2>Research Question</h2>
+    <p>
+      How do alternative forest-biomass strategies across Europe compare when climate performance is evaluated through
+      forest carbon retention, substitution effects, and biomass use, and how do those forestry choices interact with
+      agricultural land that may be important for food-related production capacity?
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <strong>Conservation Priority</strong><br />
+        Reduce total harvest by 15%, taking the cut from wood fuel first.
+      </div>
+      <div class="card">
+        <strong>Material Cascade</strong><br />
+        Keep harvest constant but shift 20% of wood fuel volume into industrial roundwood uses.
+      </div>
+      <div class="card">
+        <strong>Bioenergy Push</strong><br />
+        Increase total harvest by 15% and allocate the additional harvest to direct energy use.
+      </div>
+      <div class="card">
+        <strong>Food-Land Safeguard</strong><br />
+        Assign climate value to retaining a marginal share of agricultural land against further biomass diversion.
+      </div>
+    </div>
+
+    <h2>Data and Scope</h2>
+    <p>
+      The workflow combines FAOSTAT land-use and forestry statistics with Eurostat GISCO country and NUTS-2 geometry,
+      Eurostat regional land-cover statistics, and Eurostat crop-production data. The country-level analysis uses the
+      2024 FAOSTAT inputs, while the NUTS-2 land-cover layer uses the latest available selected Eurostat regional year, 2022.
+    </p>
+
+    <ul>
+      <li>Spatial coverage: EU-27 countries and NUTS-2 regions.</li>
+      <li>Core sectors: forestry and an agricultural land-capacity screening layer.</li>
+      <li>Economic framing: carbon value at <code>EUR 100/tCO2</code>.</li>
+    </ul>
+
+    <h2>Methods</h2>
+    <p>
+      The country-level model estimates scenario performance through three transparent components:
+      forest carbon retention, substitution gain, and supply-chain savings. The forest carbon opportunity-cost term is
+      country-specific and rises where observed harvest intensity and carbon density are relatively high.
+    </p>
+    <p>
+      The model then runs 400 fixed-seed sensitivity draws to distinguish robust from assumption-sensitive conclusions.
+      At NUTS-2 level, country scenario values are downscaled by regional woodland share, and the agricultural side is
+      strengthened with an official crop-production-intensity index derived from Eurostat data on cereals, pulses,
+      potatoes, and vegetables.
+    </p>
+    <p>
+      The metric basis now needs to be read carefully. The Sweden empirical rerun is a <em>forest-only</em> comparison
+      and reports value in <code>EUR/forest ha</code>. The integrated and optimized NUTS-2 layers compare forest and
+      food-land policies together and therefore rank options in <code>EUR/ha of total land</code>. This is why
+      <code>SE22</code> can keep <code>Material Cascade</code> as its best forest policy while still selecting
+      <code>Food-Land Safeguard</code> in the integrated map.
+    </p>
+
+    <div class="figure">
+      <img src="../figures/eu_scenario_decomposition.png" alt="EU scenario decomposition" />
+      <div class="caption">
+        Figure 1. EU-level comparison of the three forest-biomass pathways. Material cascade and conservation both
+        outperform bioenergy expansion, but for different reasons: material use gains more through substitution,
+        while conservation gains more through forest carbon retention.
+      </div>
+    </div>
+
+    <h2>Key Findings</h2>
+    <ul>
+      <li><code>Material Cascade</code> yields about <code>18.4 MtCO2e</code> net climate benefit relative to baseline.</li>
+      <li><code>Conservation Priority</code> yields about <code>17.1 MtCO2e</code>.</li>
+      <li><code>Bioenergy Push</code> is strongly negative at about <code>-21.8 MtCO2e</code>.</li>
+      <li>Across 400 sensitivity runs, bioenergy never becomes the best EU-wide option.</li>
+    </ul>
+  </section>
+
+  <section class="page break">
+    <h2>Subnational Extension</h2>
+    <p>
+      The project extends the country-level analysis to NUTS-2 regions to examine where forestry strategy and
+      agricultural land competition begin to collide. The unconstrained integrated screen selects the locally highest-value
+      option in each region:
+    </p>
+
+    <ul>
+      <li><code>Material Cascade</code> in 92 regions,</li>
+      <li><code>Conservation Priority</code> in 79,</li>
+      <li><code>Food-Land Safeguard</code> in 40,</li>
+      <li><code>Bioenergy Push</code> in 0.</li>
+    </ul>
+
+    <p>
+      This is where the project stops looking like a generic climate dashboard and starts looking more like doctoral
+      systems analysis: the main question is no longer only “which climate strategy is best?” but also “where should
+      forestry priorities yield to food-related land protection?”
+    </p>
+
+    <h2>Constrained Regional Portfolio</h2>
+    <p>
+      The final extension adds a small mixed-integer allocation model. Instead of choosing the best option in each
+      region independently, the workflow selects exactly one option per NUTS-2 region while enforcing two EU-wide safeguards:
+    </p>
+
+    <ul>
+      <li>retain at least <code>97%</code> of baseline regionalized biomass supply,</li>
+      <li>safeguard at least <code>22%</code> of the available crop-capacity proxy.</li>
+    </ul>
+
+    <div class="figure">
+      <img src="../figures/nuts2_optimized_policy_map.png" alt="Constrained NUTS-2 policy map" />
+      <div class="caption">
+        Figure 2. Constrained NUTS-2 policy portfolio. Once the model is required to preserve biomass supply and
+        protect food-related land capacity at EU scale, the spatial policy mix changes substantially relative to the
+        unconstrained regional ranking.
+      </div>
+    </div>
+
+    <div class="figure">
+      <img src="../figures/nuts2_optimized_portfolio_summary.png" alt="Constrained portfolio summary" />
+      <div class="caption">
+        Figure 3. Constrained portfolio summary. The selected policy mix is not purely descriptive: it is the result
+        of an explicit EU-wide optimization under biomass-supply and food-capacity safeguards.
+      </div>
+    </div>
+
+    <h2>Portfolio Results</h2>
+    <ul>
+      <li><code>Material Cascade</code> rises to 123 selected regions,</li>
+      <li><code>Conservation Priority</code> falls to 34,</li>
+      <li><code>Food-Land Safeguard</code> rises to 54,</li>
+      <li><code>Bioenergy Push</code> remains at 0.</li>
+    </ul>
+
+    <p>
+      In total, <code>45</code> NUTS-2 regions switch away from their unconstrained best option once the EU-wide
+      safeguards are enforced. The optimized portfolio retains about <code>97.0%</code> of baseline regionalized biomass
+      supply and safeguards about <code>45.6%</code> of the available crop-capacity proxy, well above the minimum
+      required <code>22%</code>. At <code>EUR 100/tCO2</code>, total portfolio value is about <code>EUR 2.15 billion</code>.
+    </p>
+  </section>
+
+  <section class="page break">
+    <h2>Why This Demonstrates Fit</h2>
+    <p>
+      The main value of this project for the application is not that it is already a full land-use model. It is that
+      it demonstrates the right kind of early doctoral behavior:
+    </p>
+
+    <ul>
+      <li><strong>Land-use and biomass systems thinking</strong>: forestry, material use, energy use, and food-land trade-offs are analyzed together.</li>
+      <li><strong>Carbon-accounting logic</strong>: the workflow distinguishes forest carbon retention, substitution, and supply-chain effects.</li>
+      <li><strong>Spatial analysis</strong>: the project uses official European country and NUTS-2 data and produces policy-relevant maps.</li>
+      <li><strong>Biophysical and economic modeling</strong>: the constrained regional portfolio introduces an explicit allocation problem under stated safeguards.</li>
+      <li><strong>Methodological honesty</strong>: the repository clearly separates observed quantities from proxy assumptions and is explicit about limits.</li>
+    </ul>
+
+    <h2>Important Limits</h2>
+    <p>
+      The project remains intentionally smaller than a doctoral research model. It does not include dynamic forest age
+      classes, direct regional forestry production data, direct agricultural greenhouse gas inventories, market
+      equilibrium effects, trade leakage, or richer biodiversity constraints. The NUTS-2 forestry results are still
+      a screening extension derived from country-level results, and the agricultural side remains simplified even after
+      the addition of official crop-production context.
+    </p>
+
+    <h2>How This Could Extend Into PhD Research</h2>
+    <ul>
+      <li>Replace woodland-share downscaling with better subnational forestry observations.</li>
+      <li>Replace country-level crop-intensity transfer with direct regional agricultural production or GHG indicators.</li>
+      <li>Add biodiversity or protected-area constraints.</li>
+      <li>Calibrate substitution and carbon-opportunity assumptions more tightly to literature.</li>
+      <li>Extend the constrained allocation model into a richer biophysical-economic framework.</li>
+    </ul>
+
+    <h2>Bottom Line</h2>
+    <p>
+      As an application artifact, this project creates direct evidence that the applicant can work in the style the
+      Chalmers position calls for: integrating forestry and food-land trade-offs, handling European spatial data,
+      building transparent climate-accounting logic, and translating those elements into policy-relevant regional
+      allocation analysis without overstating what the model can do.
+    </p>
+
+    <p class="small">
+      Repository: <code>eu-forest-biomass-tradeoff-explorer</code><br />
+      Recommended supporting files: <code>docs/chalmers_research_note.md</code>,
+      <code>docs/chalmers_personal_letter_draft.md</code>,
+      <code>docs/chalmers_figure_selection.md</code>,
+      <code>docs/chalmers_cv_version.md</code>
+    </p>
+  </section>
+</body>
+</html>

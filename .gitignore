@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.DS_Store
+.coverage
+mypy_cache/
+ruff_cache/
+
+# Downloaded raw datasets should be regenerated through the pipeline.
+data/raw/*
+!data/raw/.gitkeep
+
+# Interrupted downloads
+data/raw/*.part

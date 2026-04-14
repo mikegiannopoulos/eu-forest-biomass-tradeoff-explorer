@@ -1,0 +1,134 @@
+{
+  "generated_at_utc": "2026-04-14T19:56:11.259564+00:00",
+  "analysis_year": 2024,
+  "git_commit_hash": null,
+  "input_datasets": [
+    {
+      "dataset_name": "land_use",
+      "filename": "Inputs_LandUse_E_All_Data_(Normalized).zip",
+      "url": "https://fenixservices.fao.org/faostat/static/bulkdownloads/Inputs_LandUse_E_All_Data_(Normalized).zip",
+      "exists": true,
+      "size_bytes": 2959632,
+      "modified_utc": "2026-03-24T19:07:05.603341+00:00"
+    },
+    {
+      "dataset_name": "forestry",
+      "filename": "Forestry_E_All_Data_(Normalized).zip",
+      "url": "https://fenixservices.fao.org/faostat/static/bulkdownloads/Forestry_E_All_Data_(Normalized).zip",
+      "exists": true,
+      "size_bytes": 18120085,
+      "modified_utc": "2026-03-24T19:07:24.736256+00:00"
+    },
+    {
+      "dataset_name": "gisco_countries",
+      "filename": "CNTR_RG_20M_2024_4326.geojson",
+      "url": "https://gisco-services.ec.europa.eu/distribution/v2/countries/geojson/CNTR_RG_20M_2024_4326.geojson",
+      "exists": true,
+      "size_bytes": 1975112,
+      "modified_utc": "2026-03-24T19:07:21.639270+00:00"
+    },
+    {
+      "dataset_name": "gisco_nuts2",
+      "filename": "NUTS_RG_20M_2024_4326_LEVL_2.geojson",
+      "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_4326_LEVL_2.geojson",
+      "exists": true,
+      "size_bytes": 617377,
+      "modified_utc": "2026-03-24T20:07:05.750346+00:00"
+    },
+    {
+      "dataset_name": "eurostat_nuts2_landcover",
+      "filename": "lan_lcv_ovw.json",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lan_lcv_ovw?lang=EN",
+      "exists": true,
+      "size_bytes": 3105040,
+      "modified_utc": "2026-03-24T20:07:05.745346+00:00"
+    },
+    {
+      "dataset_name": "eurostat_crop_production",
+      "filename": "apro_cpsh1_selected_2024.json",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/apro_cpsh1?lang=EN&time=2024&geo=AT&geo=BE&geo=BG&geo=HR&geo=CY&geo=CZ&geo=DK&geo=EE&geo=FI&geo=FR&geo=DE&geo=EL&geo=HU&geo=IE&geo=IT&geo=LV&geo=LT&geo=LU&geo=MT&geo=NL&geo=PL&geo=PT&geo=RO&geo=SK&geo=SI&geo=ES&geo=SE&crops=C0000&crops=P0000&crops=R1000&crops=V0000&strucpro=AR&strucpro=PR_HU_EU&strucpro=YI_HU_EU",
+      "exists": true,
+      "size_bytes": 7114,
+      "modified_utc": "2026-03-24T22:50:47.266116+00:00"
+    },
+    {
+      "dataset_name": "sweden_slu_area_metadata",
+      "filename": "sweden_slu_area_metadata.json",
+      "url": null,
+      "exists": true,
+      "size_bytes": 2721,
+      "modified_utc": "2026-03-25T11:09:28.884456+00:00"
+    },
+    {
+      "dataset_name": "sweden_slu_area_data",
+      "filename": "sweden_slu_area_2022.json",
+      "url": null,
+      "exists": true,
+      "size_bytes": 3318,
+      "modified_utc": "2026-03-25T11:09:28.933011+00:00"
+    },
+    {
+      "dataset_name": "sweden_slu_increment_metadata",
+      "filename": "sweden_slu_increment_metadata.json",
+      "url": null,
+      "exists": true,
+      "size_bytes": 2698,
+      "modified_utc": "2026-03-25T11:09:28.974467+00:00"
+    },
+    {
+      "dataset_name": "sweden_slu_increment_data",
+      "filename": "sweden_slu_increment_2019.json",
+      "url": null,
+      "exists": true,
+      "size_bytes": 3275,
+      "modified_utc": "2026-03-25T11:09:29.022193+00:00"
+    },
+    {
+      "dataset_name": "sweden_slu_biomass_metadata",
+      "filename": "sweden_slu_biomass_metadata.json",
+      "url": null,
+      "exists": true,
+      "size_bytes": 2410,
+      "modified_utc": "2026-03-25T11:09:29.065876+00:00"
+    },
+    {
+      "dataset_name": "sweden_slu_biomass_data",
+      "filename": "sweden_slu_biomass_2022.json",
+      "url": null,
+      "exists": true,
+      "size_bytes": 3718,
+      "modified_utc": "2026-03-25T11:09:29.111025+00:00"
+    }
+  ],
+  "parameters": {
+    "model": {
+      "carbon_price_eur_per_tco2": 100.0,
+      "base_forest_carbon_opportunity_cost_tco2e_per_m3": 0.6,
+      "pressure_sensitivity": 0.14,
+      "carbon_density_sensitivity": 0.1,
+      "min_forest_carbon_opportunity_cost_tco2e_per_m3": 0.35,
+      "max_forest_carbon_opportunity_cost_tco2e_per_m3": 0.9,
+      "substitution_material_tco2e_per_m3": 1.1,
+      "substitution_bioenergy_tco2e_per_m3": 0.4,
+      "supply_chain_material_tco2e_per_m3": 0.08,
+      "supply_chain_bioenergy_tco2e_per_m3": 0.1,
+      "harvest_reduction_share": 0.15,
+      "wood_fuel_to_material_shift_share": 0.2,
+      "harvest_increase_share": 0.15
+    },
+    "allocation": {
+      "carbon_price_eur_per_tco2": 100.0,
+      "marginal_agricultural_land_reallocation_share": 0.05,
+      "base_food_land_displacement_tco2e_per_ha": 0.3,
+      "feed_land_displacement_sensitivity": 0.2,
+      "permanent_crop_displacement_sensitivity": 0.15,
+      "food_production_intensity_sensitivity": 0.12,
+      "min_food_land_displacement_tco2e_per_ha": 0.2,
+      "max_food_land_displacement_tco2e_per_ha": 0.7
+    },
+    "optimization": {
+      "biomass_supply_floor_share": 0.97,
+      "food_capacity_floor_share": 0.22
+    }
+  }
+}
