@@ -220,13 +220,12 @@ eu-forest-biomass-tradeoff-explorer/
     processed/
   docs/
     assumptions.md
-    chalmers_research_note.md
+    chalmers_application_brief.md
     limitations.md
     methods_note.md
     parameter_grounding_note.md
     portfolio_translation.md
     short_research_report.md
-    self_audit.md
   figures/
   notebooks/
   outputs/
@@ -253,19 +252,9 @@ Those constraints are deliberate. The goal is a credible proof-of-capability pro
 
 CV bullets, a GitHub description, and a short application-facing narrative are in [`docs/portfolio_translation.md`](docs/portfolio_translation.md).
 
-A skeptical role-fit review is in [`docs/self_audit.md`](docs/self_audit.md).
-
 The literature-grounding note is in [`docs/parameter_grounding_note.md`](docs/parameter_grounding_note.md), and the short paper-style synthesis is in [`docs/short_research_report.md`](docs/short_research_report.md).
 
-A Chalmers-specific alignment note is in [`docs/chalmers_research_note.md`](docs/chalmers_research_note.md).
-
-The application-facing package is in:
-
-- [`docs/chalmers_application_brief.pdf`](docs/chalmers_application_brief.pdf)
-- [`docs/chalmers_application_brief.md`](docs/chalmers_application_brief.md)
-- [`docs/chalmers_personal_letter_draft.md`](docs/chalmers_personal_letter_draft.md)
-- [`docs/chalmers_figure_selection.md`](docs/chalmers_figure_selection.md)
-- [`docs/chalmers_cv_version.md`](docs/chalmers_cv_version.md)
+An application-facing project brief is in [`docs/chalmers_application_brief.md`](docs/chalmers_application_brief.md).
 
 To rebuild the PDF brief:
 

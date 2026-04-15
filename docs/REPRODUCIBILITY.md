@@ -14,7 +14,7 @@ Observed outcomes:
 
 - tests passed: `12`
 - the pipeline regenerated current `data/processed/`, `outputs/`, and `figures/` artifacts
-- the application PDF was rebuilt at `docs/chalmers_application_brief.pdf`
+- the application brief build command completed successfully
 
 ## Current reproducibility strengths
 
