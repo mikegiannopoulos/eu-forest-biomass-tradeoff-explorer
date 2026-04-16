@@ -250,8 +250,6 @@ Those constraints are deliberate. The goal is a credible proof-of-capability pro
 
 ## Portfolio Translation
 
-CV bullets, a GitHub description, and a short application-facing narrative are in [`docs/portfolio_translation.md`](docs/portfolio_translation.md).
-
 The literature-grounding note is in [`docs/parameter_grounding_note.md`](docs/parameter_grounding_note.md), and the short paper-style synthesis is in [`docs/short_research_report.md`](docs/short_research_report.md).
 
 An application-facing project brief is in [`docs/chalmers_application_brief.md`](docs/chalmers_application_brief.md).
