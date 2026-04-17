@@ -53,6 +53,8 @@ With the default parameterization at `EUR 100/tCO2`:
 - `Material Cascade` is the best-performing scenario in `15` EU countries.
 - `Conservation Priority` is the best-performing scenario in `12` EU countries.
 
+![EU-level scenario decomposition](figures/eu_scenario_decomposition.png)
+
 The robustness layer shows that:
 
 - `Material Cascade` is the best EU-wide scenario in about `56%` of parameter draws.
@@ -104,6 +106,8 @@ Method details, assumptions, and limitations are documented in:
 - [`docs/methods_note.md`](docs/methods_note.md)
 - [`docs/assumptions.md`](docs/assumptions.md)
 - [`docs/limitations.md`](docs/limitations.md)
+
+![Integrated NUTS-2 policy map](figures/nuts2_integrated_policy_map.png)
 
 ## Selected Outputs
 
